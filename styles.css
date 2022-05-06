@@ -1,0 +1,493 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+/* Custom Radio */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* End Custom Radio */
+
+body{
+    display: flex;
+    border: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F6F6F6;
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p2/1927754-papel-coracao-no-fundo-rosa-para-cartao-dia-dos-namorados-gr%C3%A1tis-foto.jpg);
+    background-size: cover ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #D7294A;
+}
+
+.container-quiz{
+    height: auto;
+    width: 40vw;
+    min-height: 20px;
+    background-color:#a879d4;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22); 
+    box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22);
+    display: none;
+}
+
+.quiz-div{
+    padding: 30px;
+    width: 100%;
+}
+
+#question{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container-questions{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.container-questions div{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container-button-resp{
+    margin-top:50px;
+    margin-bottom: 0px;;
+}
+
+#button-resp{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: #F27B91 ;
+}
+
+
+.quiz-show{
+    display:flex!important;
+}
+
+#card-love{
+    animation: infinite;
+    transition: 0.8s;
+}
+
+#restart{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    background-color: white ;
+    border: none;
+    color:firebrick;
+    border:solid 3px firebrick;
+    font-size:16x;
+    height: 30px;
+    border-radius: 2px;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#restart:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.show{
+    display: flex!important;
+}
+
+#falha {
+    width: 40%;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22); 
+    box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22);
+    display: none;
+}
+
+#falha div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#falha h2{
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 400px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+#falha img{
+    width: 220px;
+    border:solid 10px #F06B8A
+}
+
+.card-show{
+    display: flex!important;
+    transition: 0.5s;
+}
+
+.flex-contain{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+
+.cartao-open{
+    padding: 20px 0px; 
+    border-radius: 5px;
+    width: 50vw;
+    height: 70vh;
+    min-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/textura-de-papel-branco-artesanal_125540-947.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22); 
+    box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.cartao-closed{
+    padding: 20px 0px; 
+    border-radius: 5px;
+    width: 25vw;
+    height: 70vh;
+    min-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/textura-de-papel-branco-artesanal_125540-947.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22); 
+    box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#front{
+    display: none;
+    transition: 0.5s;
+}
+
+#back{
+    display: none;
+}
+
+.front-image{
+    width: 50%;
+    height: auto;
+}
+
+.front-contain{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-contain-two{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.front-contain-two p {
+    font-size: 80px;
+    font-family: 'Kalam', cursive;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    margin-bottom: -40%;
+}
+
+
+.cartao-closed:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+
+.lef-container{
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.right-container{
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 5px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif-img{
+    width: 100%;
+
+}
+
+.front-image{
+    animation: pulse 1s alternate infinite ease-in;
+}
+
+@keyframes neon {
+    from {
+      filter: drop-shadow(0 0 0 white);
+    }
+    to {
+      filter: drop-shadow(0 0 10px white) ;
+    }
+}
+
+@keyframes text-animated {
+    from {
+      font-style: normal;
+    }
+    to {
+        font-style: italic;
+    }
+}
+
+@keyframes fade-text {
+    from {
+      opacity: 0;;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+      transform: scale(1.0);
+    }
+    to {
+    transform: scale(1.1);
+    }
+}
+
+
+.shadow-left{
+    -webkit-box-shadow: -24px 0px 29px -9px rgba(0,0,0,0.08); 
+    box-shadow: -24px 0px 29px -30px rgba(0,0,0,0.08);
+}
+.shadow-right{
+    -webkit-box-shadow: 24px 0px 29px -9px rgba(0,0,0,0.08); 
+    box-shadow: 24px 0px 29px -30px rgba(0,0,0,0.08);
+  
+}
+
+#botao-do-amor{
+    display: none;
+    border:none;
+    background-color: white;
+    color: #D7294A;
+    font-size:24px;
+    text-transform: uppercase;  
+    padding: 20px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;   
+}
+
+#botao-do-amor:hover{
+    transform: scale(1.1);
+    transition: 0.8s;    
+}
+
+#bar-progress{
+    width: 100%;
+    min-height: 10px;
+}
+
+
+.text{
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    animation: fade-text 0.8s alternate ease-in;
+}
+
+.title-love{
+    font-size: 26px;
+    font-family: 'Kalam', cursive;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    animation: fade-text 0.8s alternate ease-in;
+}
+
+.text-love{
+    font-size: 26px;
+    font-family: 'Kalam', cursive;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    animation: text-animated 1s alternate infinite ease-in;
+}
+
+
+@media (max-width:820px){
+
+
+    .cartao-closed{
+        width: 90vw;
+        height: 75vh;
+        min-width: 90%;
+    }
+    .cartao-open{
+        width: 90vw;
+        height: 75vh;
+        min-width: 90%;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+    .container{
+        padding: 5px 30px;
+    }
+
+    .gif-img{
+        width: 40%;
+    }
+    .lef-container{
+        padding:5px 5px;
+        width: 100%;
+    }
+
+    .right-container{
+        padding:5px 10px;
+        width: 100%;
+    }
+    .container-quiz{
+        width: 90vw;
+    }
+
+    #falha{
+        width: 90%;
+    }
+
+    #falha div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+    #falha h2{
+        font-size: 24px;
+        font-weight: 300;
+        max-width: 100%;
+        text-align: start;
+        margin-left: 0;
+        margin-top:30px;
+        text-align: center;
+    }
+    
+    #falha img{
+        width: 220px;
+        border:solid 10px #F06B8A
+    }
+}
+

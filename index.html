@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="falha">
+        <div class="falha-div">
+            <img src="https://i.pinimg.com/originals/ef/2a/b5/ef2ab59c4b6b7417dd33182f3606136e.gif" alt="">
+            <h2>
+                Você não acertou a quantidade necessária de perguntas para visualizar o cartão! :(<br>
+                Reinicie o jogo!
+            </h2>
+
+        </div>
+    </div>
+    <!-- Trocar a classe cartao-closed -> cartao-open -->
+    <!-- utilizar o id card-love para ocultar cartão na logica das perguntas-->
+    <button id="restart">Reiniciar</button>
+    <div class="container-quiz ">
+        <div class="quiz-div">
+            <p id="question"></p>
+            <div class="container-questions">
+                <div>
+                    <input type="radio" name="resp" id="alternative_1">
+                    <label id="question_1" for="alternative_1"></label>
+                </div>
+                <div>
+                    <input type="radio" name="resp" id="alternative_2">
+                    <label id="question_2" for="alternative_2"></label>
+                </div>
+                <div>
+                    <input type="radio" name="resp" id="alternative_3">
+                    <label id="question_3" for="alternative_3"></label>
+                </div>
+            </div>
+            <div class="container-button-resp">
+                <button id="button-resp">responder</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ocultar ou aparecer o contéudo usando card-show ou card-closed -->
+    <div id="front" class="card-love cartao-closed">
+        <div class="front-contain-two">
+            <p>Eu te</p>
+        </div>
+        <div class="front-contain">
+            <img class="front-image"
+                src="https://uploaddeimagens.com.br/images/003/852/277/original/%E2%80%94Pngtree%E2%80%94red_polygon_heart_6252543.png?1651548876"
+                alt="">
+        </div>
+    </div>
+
+    <!-- Ocultar ou aparecer o contéudo usando card-show ou card-closed -->
+    <div id="back" class="card-love cartao-open ">
+        <div class="lef-container">
+            <div class="container shadow-right">
+                <img class="gif-img" src="https://i.pinimg.com/originals/e7/6a/1f/e76a1f289fb9ca692ae2937010af837f.gif"
+                    alt="">
+                <!-- <img class="gif-img" src="https://img1.picmix.com/output/stamp/normal/5/6/9/4/1644965_e32f6.gif" alt="">                 -->
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="container shadow-left">
+                <p class="title-love">
+                    Parabéns para nós...
+                </p>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est pariatur rerum, maxime
+                    facere quia qui nam animi quo magni. Recusandae impedit sequi reiciendis optio quas, ut libero
+                    ad magni.
+                </p>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est pariatur rerum, maxime
+                    facere quia qui nam animi quo magni. Recusandae impedit sequi reiciendis optio quas, ut libero
+                    ad magni.
+                </p>
+                <p class="text-love">
+                    Te amo!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="botao-do-amor" class="quiz-show">BOTÃO DO AMOR</button>
+
+
+</body>
+
+</html>
