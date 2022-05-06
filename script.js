@@ -195,7 +195,7 @@ $(() => {
             localStorage.setItem('level', level);
             changeQuestions();
             console.log('Entrou no False');
-            
+            alternative = '';
             $("input:radio[name='resp']").each(function (i) {
                 this.checked = false;
             });
