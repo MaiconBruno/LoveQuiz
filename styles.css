@@ -67,11 +67,65 @@ body{
     padding-top: 60px;
     padding-bottom: 25px;
     background-color: #F6F6F6;
-    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p2/1927754-papel-coracao-no-fundo-rosa-para-cartao-dia-dos-namorados-gr%C3%A1tis-foto.jpg);
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-dia-dos-namorados-com-coracoes-rosa_1308-37924.jpg?w=2000);
     background-size: cover ;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #D7294A;
+}
+
+#bar{
+    width: 30px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#bar-progress{
+    width: 100%;
+    background-color: #34D9AA;
+    border-radius: 5px;
+}
+
+.bar-1{
+    height: 8.3%;
+}
+.bar-2{
+    height: 16.6%;
+}
+.bar-3{
+    height: 24.9%;
+}
+.bar-4{
+    height: 33.2%;
+}
+.bar-5{
+    height: 41.5%;
+}
+.bar-6{
+    height: 49.8%;
+}
+.bar-7{
+    height: 58.1%;
+}
+.bar-8{
+    height: 66.4%;
+}
+.bar-9{
+    height: 74.9%;
+}
+.bar-10{
+    height: 83%;
+}
+.bar-11{
+    height: 91.3%;
+}
+.bar-12{
+    height: 100%;
 }
 
 .container-quiz{
@@ -128,10 +182,16 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: 300;
     color: white;
-    background-color: #F27B91 ;
+    background-color: #FFC1CF ;
+    transition: 0.5s;
 }
 
+#button-resp:hover{
+    background-color: #F27B91;
+    transition: 0.5s;
+}
 
 .quiz-show{
     display:flex!important;
@@ -146,17 +206,17 @@ body{
     position: absolute;
     top:20px;
     left: 20px;
-    background-color: white ;
+    background-color: #F588A1 ;
     border: none;
-    color:firebrick;
-    border:solid 3px firebrick;
-    font-size:16x;
+    color:white;
+    border:solid 1px white;
+    font-size:12px;
     height: 30px;
-    border-radius: 2px;
-    font-weight:bold;
+    border-radius: 5px;
+    font-weight:300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     padding-left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-right: 20px;
     letter-spacing: 2px;
     cursor: pointer;
@@ -372,18 +432,19 @@ body{
 .shadow-right{
     -webkit-box-shadow: 24px 0px 29px -9px rgba(0,0,0,0.08); 
     box-shadow: 24px 0px 29px -30px rgba(0,0,0,0.08);
-  
 }
 
 #botao-do-amor{
     display: none;
     border:none;
-    background-color: white;
-    color: #D7294A;
+    background-color: white;;
+    color: #F387A0;
+    border:solid 1px #F387A0;
     font-size:24px;
     text-transform: uppercase;  
-    padding: 20px 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 25px;
+    font-weight:300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.8s;   
@@ -398,7 +459,13 @@ body{
     width: 100%;
     min-height: 10px;
 }
+.font-label{
+    font-weight: 300;
+}
 
+#question{
+    font-weight: 300;
+}
 
 .text{
     font-size: 14px;

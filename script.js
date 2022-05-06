@@ -5,6 +5,12 @@ let alternative;
 
 $(() => {
    
+    function changeBar(){
+        if(points <= 12){
+            $('#bar-progress').removeClass();
+            $('#bar-progress').addClass(`bar-${points}`);
+        }     
+    }
 
     function changeQuestions() {
 
@@ -19,20 +25,20 @@ $(() => {
 
         } else if (level == 2) {
 
-            $("#question").text('Qual meu sabor de sorvete favorito?')
-            $("#question_1").text('A - Chocolate');
-            $("#question_2").text('B - Maracujá');
-            $("#question_3").text('C - Napolitano');
+            $("#question").text('Qual minha comida favorita ?')
+            $("#question_1").text('A - Lasanha');
+            $("#question_2").text('B - Chocolate');
+            $("#question_3").text('C - Milkshake');
             resp = 'A';
 
         }
         else if (level == 3) {
 
-            $("#question").text('Qual o meu gênero de filme você acha que eu gosto?')
-            $("#question_1").text('A - Comédia');
-            $("#question_2").text('B - Ficção');
-            $("#question_3").text('C - Ação!');
-            resp = 'B';
+            $("#question").text('Qual genero de filme você acha mais gosto? ')
+            $("#question_1").text('A - Ficção');
+            $("#question_2").text('B - Ação');
+            $("#question_3").text('C - Investigação');
+            resp = 'C';
 
         }
         else if (level == 4) {
@@ -45,7 +51,7 @@ $(() => {
         }
         else if (level == 5) {
 
-            $("#question").text('Se eu pudesse mudar algo na minha vida, o que seria?')
+            $("#question").text('Se eu pudesse mudar algo na minha vida, o que você acha que seria?')
             $("#question_1").text('A - Morar em outro país.');
             $("#question_2").text('B - Nada, tudo é do jeito que tem que ser.');
             $("#question_3").text('C - Tudo!');
@@ -64,9 +70,9 @@ $(() => {
         else if (level == 7) {
 
             $("#question").text('O que mais me irrita?')
-            $("#question_1").text('A - Pessoas que acham que sabem de tudo.');
-            $("#question_2").text('B - Pessoas indecisas.');
-            $("#question_3").text('C - Tirar minha fala fora de contexto.');
+            $("#question_1").text('A - Ser dono da verdade.');
+            $("#question_2").text('B - Indecisão');
+            $("#question_3").text('C - Hipocrisia ');
             resp = 'C';
 
         }
@@ -93,44 +99,116 @@ $(() => {
         else if (level == 10) {
 
             $("#question").text('O que eu mais gosto em você no aspecto personalidade ?')
-            $("#question_1").text('A - Seu jeito as vezes dengoso');
-            $("#question_2").text('B - Seu jeito amoroso');
-            $("#question_3").text('C - Sua resiliência');
+            $("#question_1").text('A - Dengo');
+            $("#question_2").text('B - Amorosidade');
+            $("#question_3").text('C - Resiliência');
             resp = 'B';
 
         }
 
         else if (level == 11) {
 
-            $("#question").text('Quando foi que nós falamos a primeira vez?')
-            $("#question_1").text('A - 3/01/2022');
-            $("#question_2").text('B - 12/12/2021');
-            $("#question_3").text('C - 20/12/2021');
-            resp = 'C';
+            $("#question").text('Qual foi o mês que nós falamos a primeira vez?')
+            $("#question_1").text('A - Dezembro');
+            $("#question_2").text('B - Outubro');
+            $("#question_3").text('C - Janeiro');
+            resp = 'A';
             
         }
 
         else if (level == 12) {
 
-            $("#question").text('Quando foi que nós falamos a primeira vez?')
-            $("#question_1").text('A - 3/01/2022');
-            $("#question_2").text('B - 12/12/2021');
-            $("#question_3").text('C - 20/12/2021');
+            $("#question").text('Entre os amigos eu sou:')
+            $("#question_1").text('A - O tiozão que fica cuidando dos "sobrinhos".');
+            $("#question_2").text('B - O Porra loka que topa tudo!');
+            $("#question_3").text('C - O Introvertido.');
+            resp = 'A';
+            
+        }
+        else if (level == 13) {
+
+            $("#question").text('Qual tipo de festa eu mais odiaria ir?')
+            $("#question_1").text('A - Pagodeira.');
+            $("#question_2").text('B - Baile Funk.');
+            $("#question_3").text('C - Festa Eletronica.');
+            resp = 'B';
+
+        }
+        else if (level == 14) {
+
+            $("#question").text('Sei que meu gosto musical é muito eclético, mas que tipo de musica eu mais gosto de ouvir hoje?')
+            $("#question_1").text('A - Jazz');
+            $("#question_2").text('B - Blues');
+            $("#question_3").text('C - Rock');
+            resp = 'A';
+
+        }
+        else if (level == 15) {
+
+            $("#question").text('Quando eu quero relaxar, o eu prefiro fazer?')
+            $("#question_1").text('A - Dormir');
+            $("#question_2").text('B - Sair');
+            $("#question_3").text('C - Ouvir Musica');
+            resp = 'B';
+
+        }
+        else if (level == 16) {
+
+            $("#question").text('Quais destas pessoas mais me conhece?')
+            $("#question_1").text('A - Meu pai');
+            $("#question_2").text('B - Minha Irmã');
+            $("#question_3").text('C - Meus Amigos');
+            resp = 'B';
+
+        }
+        else if (level == 17) {
+
+            $("#question").text('O que você acha que eu mais gosto em você?')
+            $("#question_1").text('A - Sua personalidade');
+            $("#question_2").text('B - Seu romantismo');
+            $("#question_3").text('C - Seu cuidado comigo');
             resp = 'C';
+
+        }
+        else if (level == 18) {
+
+            $("#question").text('Que tipo de clima mais me agrada?')
+            $("#question_1").text('A - Frio');
+            $("#question_2").text('B - Calor');
+            $("#question_3").text('C - Nem frio nem calor');
+            resp = 'A';
+
+        }
+        else if (level == 19) {
+
+            $("#question").text('O que eu penso sobre dividir comida?')
+            $("#question_1").text('A - Não me importo');
+            $("#question_2").text('B - Nem pensar!');
+            $("#question_3").text('C - Depende da fome.');
+            resp = 'C';
+
+        }
+        else if (level == 20) {
+
+            $("#question").text('O que eu mais gosto de fazer contigo?')
+            $("#question_1").text('A - Sair pra comer.');
+            $("#question_2").text('B - Ficar deitado juntinho e cochilar.');
+            $("#question_3").text('C - Cozinhar');
+            resp = 'B';
 
         }
         else {
             console.log('não esta indo');
         }
 
-        if (level >= 12 && points >= 8) {
+        if (level >= 20 && points >= 12) {
             $('#front').addClass('card-show');
             changeGameHidden();
-        }else if (level == 12 && points < 8){
+        }else if (level == 20 && points < 12){
             changeGameHidden();          
              $('#falha').addClass('show');
         }else{
-            
+            changeBar();
         }
 
     }
@@ -194,7 +272,6 @@ $(() => {
             level++;
             localStorage.setItem('level', level);
             changeQuestions();
-            console.log('Entrou no False');
             alternative = '';
             $("input:radio[name='resp']").each(function (i) {
                 this.checked = false;
