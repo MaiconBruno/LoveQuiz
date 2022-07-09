@@ -1,9 +1,5 @@
 # Olá, tudo bem? 
 
-* Esse é um projetinho que fiz de um quiz com perguntas sobre mim para o dia dos namorados onde o 
-* objetivo é responder o máximo de perguntas corretas para fazer uma pontuação necessária e conseguir 
-* visualizar o cartão com a mensagem. 
-
 * Esse é um projetinho que fiz de um quiz com perguntas sobre mim para o dia dos namorados onde o objetivo é responder o máximo de perguntas corretas para fazer uma pontuação necessária e conseguir visualizar o cartão com a mensagem. 
 
 ### Mas, afinal como isso surgiu? 
