@@ -11,4 +11,4 @@ Esse é um projetinho que fiz de um quiz com perguntas sobre mim para o dia dos 
  “Então faça um código!" ali percebi que era algo importante para ela e como não gosto de 
  facilitar as coisas tive essa ideia e assim surgiu o Love Quiz um projetinho bem simples, porém, feito com muito carinho. :D
  
- <a href="https://imgbox.com/s7y3yBMv" target="_blank"><img src="https://thumbs2.imgbox.com/62/83/s7y3yBMv_t.gif" alt="image host"/></a>
+<img src="https://thumbs2.imgbox.com/62/83/s7y3yBMv_t.gif" width="100%" alt="image host"/>
