@@ -11,3 +11,4 @@ Esse é um projetinho que fiz de um quiz com perguntas sobre mim para o dia dos 
  “Então faça um código!" ali percebi que era algo importante para ela e como não gosto de 
  facilitar as coisas tive essa ideia e assim surgiu o Love Quiz um projetinho bem simples, porém, feito com muito carinho. :D
 
+![lovequiGif](https://user-images.githubusercontent.com/47543698/178126288-7c0d063e-90e1-4b82-b075-2b2dc1c32b1c.gif)
