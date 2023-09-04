@@ -1,6 +1,4 @@
-# Olá, tudo bem? 
-
-Esse é um projetinho que fiz de um quiz com perguntas sobre mim para o dia dos namorados onde o objetivo é responder o máximo de perguntas corretas para fazer uma pontuação necessária e conseguir visualizar o cartão com a mensagem. 
+Este é um pequeno projeto que criei como um desafio especial para minha esposa no Dia dos Namorados. O objetivo é responder o maior número de perguntas corretamente para alcançar uma pontuação específica e, assim, desbloquear o cartão com a mensagem surpresa. 
 
 ### Afinal como isso surgiu? 
 
