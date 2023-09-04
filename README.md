@@ -2,7 +2,7 @@ Este é um pequeno projeto que criei como um desafio especial para minha esposa 
 
 ### Afinal como isso surgiu? 
 
-Na semana que antecedia o Dia dos Namorados, minha namorada trouxe à tona a conversa sobre os populares textos românticos que invariavelmente inundam a internet nessa ocasião. Como a maioria, eu também estava considerando criar algo semelhante. No entanto, devo admitir que nunca fui muito habilidoso com palavras e, além disso, tenho uma certa reserva em relação a expor detalhes pessoais da minha vida online, especialmente no que diz respeito ao nosso relacionamento.
+Na semana que antecedia o Dia dos Namorados, minha mulher trouxe à tona a conversa sobre os populares textos românticos que invariavelmente inundam a internet nessa ocasião. Como a maioria, eu também estava considerando criar algo semelhante. No entanto, devo admitir que nunca fui muito habilidoso com palavras e, além disso, tenho uma certa reserva em relação a expor detalhes pessoais da minha vida online, especialmente no que diz respeito ao nosso relacionamento.
 
 Minha resposta foi direta, sou apenas um programador, não um poeta. Foi então que ela respondeu com uma sugestão intrigante: "Então por que não criar um código?" Foi nesse momento que percebi o quanto isso significava para ela. Como sou conhecido por propor desafios, essa ideia tomou forma e assim surgiu o Love Quiz, um projeto modesto, porém carregado de afeto e dedicação. :D
 
